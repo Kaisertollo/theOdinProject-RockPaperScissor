@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img id="logo" src="images/téléchargement.png" alt="logo">
+            <div id="title">Let's Play</div>
+        </header>
+        <div id="Game">
+            <div id="left">
+                <p class="player's name">PLAYER: <span id="score1"></span></p>
+                <img  id="choice1"src="images/icons8-hand-80 (1).png" height="200" alt="player1's choice">
+                <table>
+                    <tr>
+                        <td><img class="liste_choix" onclick="pick('paper')" id="paper"src="images/icons8-hand-80 (1).png" alt="paper"></td>
+                        <td><img class="liste_choix" id="rock" onclick="pick('rock')" src="images/icons8-hand-rock-80.png" alt="rock"></td>
+                        <td><img class="liste_choix" id="scissor" onclick="pick('scissor')" src="images/icons8-hand-peace-80.png" alt="scissor"></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="middle">
+                <p id="winner"></p>
+            </div>
+            <div id="right">
+                    <p class="player's name">COMPUTER: <span id="score2"></span></p>
+                    <img  id="choice2" src="images/icons8-hand-80 (1).png" height="200" alt="player2's choice">
+                    <table>
+                        <tr>
+                            <td><img class="liste_choix1"src="images/icons8-hand-80 (1).png" alt="paper"></td>
+                            <td><img class="liste_choix1" src="images/icons8-hand-rock-80.png" alt="rock"></td>
+                            <td><img class="liste_choix1" src="images/icons8-hand-peace-80.png" alt="scissor"></td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+        <footer>
+                <button id="jouer" onclick="game();">Jouer</button>    
+        </footer>
+        
+    </div>
+</body>
+<script>
+    var id=setInterval(animate_choice2,300);
+</script>
+</html>
